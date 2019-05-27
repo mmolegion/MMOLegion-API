@@ -8,11 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d37af16-e58e-4f66-8b74-52ab5fe5cfc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/TokenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/TokenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/target/auth.war" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/target/auth/WEB-INF/classes/com/mmolegion/auth/controller/TokenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth/target/auth/WEB-INF/classes/com/mmolegion/auth/controller/TokenController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/target/auth/WEB-INF/classes/com/mmolegion/auth/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth/target/auth/WEB-INF/classes/com/mmolegion/auth/controller/UserController.class" afterDir="false" />
@@ -21,16 +17,6 @@
       <change beforePath="$PROJECT_DIR$/auth/target/classes/com/mmolegion/auth/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth/target/classes/com/mmolegion/auth/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/GenericDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Token.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/META-INF/core.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/dao/UserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/dao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/dao/UserDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/service/UserService.class" afterDir="false" />
@@ -58,10 +44,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/TokenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="136" column="74" selection-start-line="136" selection-start-column="74" selection-end-line="136" selection-end-column="74" />
+            <state relative-caret-position="1449">
+              <caret line="65" column="119" lean-forward="true" selection-start-line="65" selection-start-column="119" selection-end-line="65" selection-end-column="119" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -399,7 +385,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558986916463" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558987130254" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -552,8 +538,16 @@
       <workItem from="1558795227175" duration="8576000" />
       <workItem from="1558806466962" duration="6004000" />
       <workItem from="1558830409897" duration="15533000" />
-      <workItem from="1558892096561" duration="38188000" />
+      <workItem from="1558892096561" duration="38432000" />
     </task>
+    <task id="LOCAL-00001" summary="completed user and token controller.">
+      <created>1558987115214</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558987115214</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -589,7 +583,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72789000" />
+    <option name="totallyTimeSpent" value="73033000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -604,7 +598,7 @@
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18521462" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18521462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -615,7 +609,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32951945" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4446987" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4446987" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -643,6 +637,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="completed user and token controller." />
+    <option name="LAST_COMMIT_MESSAGE" value="completed user and token controller." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/config/SystemProperties.java">
@@ -912,16 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/TokenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="65" column="119" lean-forward="true" selection-start-line="65" selection-start-column="119" selection-end-line="65" selection-end-column="119" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Time.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -1007,8 +995,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="136" column="74" selection-start-line="136" selection-start-column="74" selection-end-line="136" selection-end-column="74" />
+        <state relative-caret-position="3427">
+          <caret line="151" column="17" lean-forward="true" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/TokenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1449">
+          <caret line="65" column="119" lean-forward="true" selection-start-line="65" selection-start-column="119" selection-end-line="65" selection-end-column="119" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

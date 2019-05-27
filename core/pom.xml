@@ -92,13 +92,7 @@
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-config</artifactId>
         </dependency>
-
-        <!-- Guava -->
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-        </dependency>
-
+        
         <!-- Hibernate -->
         <dependency>
             <groupId>org.hibernate</groupId>
