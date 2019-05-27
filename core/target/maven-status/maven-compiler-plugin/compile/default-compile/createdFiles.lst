@@ -1,0 +1,14 @@
+com\mmolegion\core\config\SystemProperties.class
+com\mmolegion\core\util\Crypto.class
+com\mmolegion\core\util\Time.class
+com\mmolegion\core\config\JacksonConfig.class
+com\mmolegion\core\service\UserService.class
+com\mmolegion\core\config\JPAConfig.class
+com\mmolegion\core\dao\UserDaoImpl.class
+com\mmolegion\core\model\User_.class
+com\mmolegion\core\dao\UserDao.class
+com\mmolegion\core\service\UserServiceImpl.class
+com\mmolegion\core\config\WebMvcConfig.class
+com\mmolegion\core\dao\GenericDao.class
+com\mmolegion\core\model\User.class
+com\mmolegion\core\config\AppInitializer.class
