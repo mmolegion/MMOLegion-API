@@ -30,6 +30,13 @@ public abstract class GenericDao {
         return qry.getResultList();
     }
 
+    int executeUpdate(EntityManager em, String query, Map<String, Object> params) {
+        Query qry = em.createQuery(query);
+        setQueryParams(qry, params);
+
+        return qry.executeUpdate();
+    }
+
     private void setQueryParams(Query query, Map<String, Object> params) {
         logger.debug("Setting query parameters.");
 

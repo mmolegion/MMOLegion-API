@@ -1,9 +1,5 @@
 package com.mmolegion.auth.controller;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.mmolegion.core.model.User;
 import com.mmolegion.core.service.UserService;
 import com.mmolegion.core.util.Crypto;
@@ -35,9 +31,8 @@ public class TokenController {
         this.userService = userService;
     }
 
-    @PostMapping("/generate-token")
+    @PostMapping("/api/v1/token/generate-token")
     public ResponseEntity<?> generateToken(HttpServletRequest request) {
-        ArrayNode json = new ObjectMapper().createArrayNode();
         logger.debug("Attempting to generate a token.");
 
         Map<String, String> params = Request.getParams(request);
@@ -47,7 +42,7 @@ public class TokenController {
             logger.debug("Username and password parameters are not null, checking if valid.");
 
             try {
-                User user = userService.findUser(params.get("username"), params.get("password"));
+                User user = userService.findUser(params.get("username"));
 
                 if (user != null &&
                         Crypto.verifyPassword(params.get("password"),
@@ -55,16 +50,7 @@ public class TokenController {
                                 user.getPasswordHash())) {
 
                     logger.debug("Username and password are valid. Generating token.");
-                    String token = Token.createToken(user);
-
-                    if (token != null && token.length() > 0) {
-                        logger.debug("Token generated successfully.");
-                        logger.debug("Token: " + token);
-                        logger.debug("Returning OK 200 status.");
-
-                        response.put("token", token);
-                        return new ResponseEntity<>(Response.createResponse(response, HttpStatus.OK), HttpStatus.OK);
-                    }
+                    return Token.generateTokenAndReturnResponse(user, response);
                 } else {
                     logger.debug("Username and/or password were not valid. Returning Unauthorized 401 status.");
                     response.put("valid", "false");
@@ -80,7 +66,7 @@ public class TokenController {
         return new ResponseEntity<>(Response.createResponse(response, HttpStatus.BAD_REQUEST), HttpStatus.BAD_REQUEST);
     }
 
-    @PostMapping("/verify-token")
+    @PostMapping("/api/v1/token/verify-token")
     public ResponseEntity<?> verifyToken(HttpServletRequest request) {
         logger.debug("Attempting to verify a token.");
 

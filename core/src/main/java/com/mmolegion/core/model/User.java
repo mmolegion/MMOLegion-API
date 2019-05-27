@@ -1,9 +1,6 @@
 package com.mmolegion.core.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -21,6 +18,9 @@ public class User implements Serializable {
 
     @Column(name = "email")
     private String email;
+
+    @Transient
+    private String password;
 
     @Column(name = "passwordSalt")
     private String passwordSalt;
@@ -62,6 +62,14 @@ public class User implements Serializable {
         this.email = email;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public String getPasswordSalt() {
         return passwordSalt;
     }
@@ -76,5 +84,16 @@ public class User implements Serializable {
 
     public void setPasswordHash(String password_hash) {
         this.passwordHash = password_hash;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", email='" + email + '\'' +
+                ", passwordSalt='" + passwordSalt + '\'' +
+                ", passwordHash='" + passwordHash + '\'' +
+                '}';
     }
 }
