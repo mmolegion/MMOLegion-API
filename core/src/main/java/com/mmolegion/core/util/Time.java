@@ -1,5 +1,6 @@
 package com.mmolegion.core.util;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Date;
@@ -24,5 +25,9 @@ public class Time {
     public static Date minusDays(int numDays) {
         LocalDateTime date = LocalDateTime.now().minusDays(numDays);
         return Date.from(date.atZone(ZoneId.systemDefault()).toInstant());
+    }
+
+    public static String asSQLDate(Date date) {
+        return new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(date);
     }
 }

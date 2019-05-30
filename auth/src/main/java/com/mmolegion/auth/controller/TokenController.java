@@ -17,8 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 @RestController
 public class TokenController {
@@ -44,17 +46,28 @@ public class TokenController {
             try {
                 User user = userService.findUser(params.get("username"));
 
-                if (user != null &&
-                        Crypto.verifyPassword(params.get("password"),
-                                user.getPasswordSalt(),
-                                user.getPasswordHash())) {
+                if (user != null) {
+                    if (checkLockoutStatus(user)) {
+                        logger.debug("User is locked out until " + user.getLockoutUntil() + ". Returning Unauthorized 400 status.");
+                        response.put("failedAttempts", String.valueOf(user.getFailedAttempts()));
+                        response.put("lockedOutUntil", new Date(user.getLockoutUntil()).toString());
+                        response.put("valid", "false");
+                        return new ResponseEntity<>(Response.createResponse(response, HttpStatus.UNAUTHORIZED), HttpStatus.UNAUTHORIZED);
+                    } else if (Crypto.verifyPassword(params.get("password"),
+                            user.getPasswordSalt(),
+                            user.getPasswordHash())) {
+                        userService.clearUserLockout(user);
+                        logger.debug("Username and password are valid. Generating token.");
+                        return Token.generateTokenAndReturnResponse(user, response);
+                    } else {
 
-                    logger.debug("Username and password are valid. Generating token.");
-                    return Token.generateTokenAndReturnResponse(user, response);
-                } else {
-                    logger.debug("Username and/or password were not valid. Returning Unauthorized 401 status.");
-                    response.put("valid", "false");
-                    return new ResponseEntity<>(Response.createResponse(response, HttpStatus.UNAUTHORIZED), HttpStatus.UNAUTHORIZED);
+                        logger.debug("Username and/or password were not valid. Returning Unauthorized 401 status.");
+                        userService.incrementFailedAttempts(user);
+
+                        response.put("failedAttempts", String.valueOf(Objects.requireNonNull(user).getFailedAttempts()));
+                        response.put("valid", "false");
+                        return new ResponseEntity<>(Response.createResponse(response, HttpStatus.UNAUTHORIZED), HttpStatus.UNAUTHORIZED);
+                    }
                 }
             } catch (InvalidKeySpecException | NoSuchAlgorithmException e) {
                 e.printStackTrace();
@@ -90,6 +103,15 @@ public class TokenController {
         logger.debug("Authorization header not provided. Returning Bad Request 400 status.");
         response.put("valid", "false");
         return new ResponseEntity<>(Response.createResponse(response, HttpStatus.BAD_REQUEST), HttpStatus.BAD_REQUEST);
+    }
+
+    private boolean checkLockoutStatus(User user) {
+        if (user.getLockoutUntil() > 0 && new Date().before(new Date(user.getLockoutUntil()))) {
+            return true;
+        } else if (user.getLockoutUntil() > 0) {
+            userService.clearUserLockout(user);
+        }
+        return false;
     }
 
 }
