@@ -14,4 +14,11 @@ public interface UserService {
     int updateUser(User user);
 
     int deleteUser(User user);
+
+    int incrementFailedAttempts(User user);
+
+    int setUserLockout(User user);
+
+    int clearUserLockout(User user);
+
 }

@@ -50,6 +50,7 @@ public class Token {
                     .withSubject(user.getUsername())
                     .withExpiresAt(Time.addDays(EXPIRE_DUR))
                     .withIssuedAt(new Date())
+                    .withClaim("isAdmin", user.isAdmin())
                     .sign(algorithm);
         } catch (JWTCreationException e) {
             e.printStackTrace();

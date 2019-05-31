@@ -7,28 +7,48 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d37af16-e58e-4f66-8b74-52ab5fe5cfc9" name="Default Changelist" comment="">
+    <list default="true" id="1d37af16-e58e-4f66-8b74-52ab5fe5cfc9" name="Default Changelist" comment="completed user and token controller.">
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/mmolegion/web/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jboss-web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/resources/css/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/resources/js/plugins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/resources/js/vendor/modernizr-3.7.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/resources/site.webmanifest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/auth.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/TokenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/TokenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/target/auth/WEB-INF/classes/com/mmolegion/auth/controller/TokenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth/target/auth/WEB-INF/classes/com/mmolegion/auth/controller/TokenController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/target/auth/WEB-INF/classes/com/mmolegion/auth/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth/target/auth/WEB-INF/classes/com/mmolegion/auth/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/target/auth/WEB-INF/lib/core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/auth/target/auth/WEB-INF/lib/core-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/target/classes/com/mmolegion/auth/controller/TokenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth/target/classes/com/mmolegion/auth/controller/TokenController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/target/classes/com/mmolegion/auth/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth/target/classes/com/mmolegion/auth/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Time.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Token.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/dao/UserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/dao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/dao/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/model/User_.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/model/User_.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/util/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/util/Request.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/util/Time.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/util/Time.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/util/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/util/Token.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/core-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/generated-sources/annotations/com/mmolegion/core/model/User_.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/generated-sources/annotations/com/mmolegion/core/model/User_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/mmolegion/web/controller/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/test.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/resources/css/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/resources/js/vendor/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/js/jquery-3.4.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/resources/js/vendor/jquery-3.4.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/com/mmolegion/web/controller/TestController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/web.war" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/core-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/resources/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/resources/css/global.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,13 +64,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/TokenController.java">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jboss-web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1449">
-              <caret line="65" column="119" lean-forward="true" selection-start-line="65" selection-start-column="119" selection-end-line="65" selection-end-column="119" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="23">
+              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -60,9 +77,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -70,6 +87,8 @@
     <findStrings>
       <find>core</find>
       <find>verify</find>
+      <find>guava</find>
+      <find>guav</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -86,7 +105,6 @@
         <option value="$PROJECT_DIR$/web/src/main/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/auth/core/config/WebMvcConfig.java" />
         <option value="$PROJECT_DIR$/web/src/main/resources/persistence.xml" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jboss-web.xml" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/auth/core/config/JPAConfig.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/mmolegion/auth/web/controller/TestController.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/test.jsp" />
@@ -98,29 +116,41 @@
         <option value="$PROJECT_DIR$/auth/src/test/java/PasswordTest.java" />
         <option value="$PROJECT_DIR$/web/pom.xml" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Crypto.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/config/JPAConfig.java" />
-        <option value="$PROJECT_DIR$/core/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Time.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/config/AppContext.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/Response.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/response/JWT.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/response/Response.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/response/HTTPResponse.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Response.java" />
-        <option value="$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/TokenController.java" />
-        <option value="$PROJECT_DIR$/core/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/User.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Request.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Token.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserService.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/GenericDao.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/core/pom.xml" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Token.java" />
         <option value="$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserService.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Time.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/User.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/TokenController.java" />
+        <option value="$PROJECT_DIR$/core/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/config/JPAConfig.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/index.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/resources/css/global.css" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/mmolegion/web/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jboss-web.xml" />
       </list>
     </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -142,6 +172,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,6 +229,19 @@
               <item name="auth" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Authentication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Authentication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Authentication" type="b2602c69:ProjectViewProjectNode" />
@@ -358,6 +402,46 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Authentication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Authentication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Authentication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Authentication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -378,37 +462,38 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558987130254" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559235210570" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\carraway\Desktop\Github\Authentication\web\src\main\webapp\resources\js\vendor" />
+      <recent name="C:\Users\carraway\Desktop\Github\Authentication\web\src\main\webapp\resources\js" />
+      <recent name="C:\Users\carraway\Desktop\Github\Authentication\web\src\main\webapp\resources\css" />
+      <recent name="C:\Users\carraway\Desktop\Github\Authentication\web\src\main\webapp\resources" />
+      <recent name="C:\Users\carraway\Desktop\Github\Authentication\web\src\main\webapp\WEB-INF\views" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.mmolegion.auth.core.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\carraway\Desktop\Github\Authentication\auth\src\main\resources" />
       <recent name="C:\Users\carraway\Desktop\Github\Authentication\web\src\main\resources" />
       <recent name="C:\Users\carraway\Desktop\Github\Authentication\core\src\main\resources" />
-      <recent name="C:\Users\carraway\Desktop\Github\Authentication\web\src\main\webapp\resources\js" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.mmolegion.auth.core.config" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\carraway\Desktop\Github\Authentication\web\src\main\webapp\WEB-INF\views" />
-      <recent name="C:\Users\carraway\Desktop\Github\Authentication\web\src\main\webapp\resources\css" />
       <recent name="C:\Users\carraway\Desktop\Github\Authentication\web\src\main\webapp\resources\js" />
     </key>
   </component>
@@ -425,14 +510,14 @@
     </option>
   </component>
   <component name="RunManager" selected="JBoss Server.JBoss 8.0.0.Final">
-    <configuration name="JBoss 8.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 8.0.0.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true" show_console_on_std_err="true" show_console_on_std_out="true">
-      <option name="OPEN_IN_BROWSER" value="false" />
+    <configuration name="JBoss 8.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 8.0.0.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="web:war">
+        <artifact name="auth:war">
           <settings />
         </artifact>
-        <artifact name="auth:war">
+        <artifact name="web:war">
           <settings />
         </artifact>
       </deployment>
@@ -446,7 +531,7 @@
       </server-settings>
       <predefined_log_file enabled="true" id="JBoss" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="58291" />
+        <option name="DEBUG_PORT" value="53794" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -496,8 +581,8 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="web:war" />
           <artifact name="auth:war" />
+          <artifact name="web:war" />
         </option>
       </method>
     </configuration>
@@ -538,7 +623,8 @@
       <workItem from="1558795227175" duration="8576000" />
       <workItem from="1558806466962" duration="6004000" />
       <workItem from="1558830409897" duration="15533000" />
-      <workItem from="1558892096561" duration="38432000" />
+      <workItem from="1558892096561" duration="55758000" />
+      <workItem from="1559235282305" duration="102000" />
     </task>
     <task id="LOCAL-00001" summary="completed user and token controller.">
       <created>1558987115214</created>
@@ -547,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558987115214</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="completed user and token controller.">
+      <created>1558987208544</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558987208544</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -583,7 +676,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73033000" />
+    <option name="totallyTimeSpent" value="90461000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -598,7 +691,7 @@
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18521462" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18680446" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -609,7 +702,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32951945" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4446987" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5064836" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -622,7 +715,7 @@
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Application Servers" order="13" weight="0.11613406" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.30282226" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.25171626" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -643,24 +736,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="completed user and token controller." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/config/SystemProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="71" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
-          <folding>
-            <element signature="e#185#186#0" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/resources/js/jquery-3.4.1.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/resources/js/global.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/resources/css/global.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/resources/log4j2.xml">
@@ -671,38 +747,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/resources/persistence.xml" />
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jboss-web.xml" />
     <entry file="file://$PROJECT_DIR$/core/src/main/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/mmolegion/web/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/mmolegion/web/controller/TestController.java" />
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/test.jsp" />
     <entry file="file://$PROJECT_DIR$/auth/src/main/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/JWTHelper.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/auth0/java-jwt/3.8.1/java-jwt-3.8.1.jar!/com/auth0/jwt/JWTCreator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="87" column="34" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -718,33 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/config/WebMvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/config/JPAConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="29" column="4" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/config/JacksonConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -752,13 +778,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/config/AppInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -790,37 +809,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/response/JWT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/response/HTTPResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/response/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/response/JWT.java" />
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/response/HTTPResponse.java" />
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/response/Response.java" />
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Response.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -859,37 +850,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="97" column="38" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/19.0/guava-19.0.jar!/com/google/common/base/Splitter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="209" column="37" lean-forward="true" selection-start-line="209" selection-start-column="37" selection-end-line="209" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="120" column="25" selection-start-line="120" selection-start-column="25" selection-end-line="120" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-437">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding>
-            <element signature="e#1427#1428#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1506#1507#0" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -910,16 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Time.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Request.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -930,30 +884,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Token.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="107" column="37" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="352">
+          <caret line="187" column="24" selection-start-line="187" selection-start-column="24" selection-end-line="187" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/GenericDao.java">
+    <entry file="file://$PROJECT_DIR$/core/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="265">
+          <caret line="96" column="20" lean-forward="true" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
+        <state relative-caret-position="-1886">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -962,8 +910,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="161">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Time.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#985#986#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1978">
+          <caret line="120" column="36" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/auth0/java-jwt/3.8.1/java-jwt-3.8.1.jar!/com/auth0/jwt/JWTCreator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="87" column="34" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-12/lib/src.zip!/java.base/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="178" column="11" selection-start-line="178" selection-start-column="11" selection-end-line="178" selection-end-column="11" />
+          <folding>
+            <element signature="e#6920#6921#0" expanded="true" />
+            <element signature="e#6951#6952#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/GenericDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -972,31 +990,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+        <state relative-caret-position="491">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1248#1249#0" expanded="true" />
             <element signature="e#1295#1296#0" expanded="true" />
             <element signature="e#1368#1369#0" expanded="true" />
             <element signature="e#1415#1416#0" expanded="true" />
+            <element signature="e#1801#1802#0" expanded="true" />
+            <element signature="e#1848#1849#0" expanded="true" />
+            <element signature="e#1976#1977#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3427">
-          <caret line="151" column="17" lean-forward="true" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
+        <state relative-caret-position="1020">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1005,11 +1017,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/TokenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1449">
-          <caret line="65" column="119" lean-forward="true" selection-start-line="65" selection-start-column="119" selection-end-line="65" selection-end-column="119" />
+        <state relative-caret-position="495">
+          <caret line="71" column="76" lean-forward="true" selection-start-line="71" selection-start-column="76" selection-end-line="71" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/config/JPAConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/index.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/resources/css/normalize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7245" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/resources/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3611">
+          <caret line="157" column="1" selection-start-line="157" selection-start-column="1" selection-end-line="157" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1426">
+          <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/mmolegion/web/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/config/AppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/config/WebMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jboss-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1019,7 +1104,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>web:war</last-edited>
+          <last-edited>auth:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

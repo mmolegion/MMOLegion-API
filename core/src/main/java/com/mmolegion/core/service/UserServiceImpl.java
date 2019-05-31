@@ -53,4 +53,27 @@ public class UserServiceImpl implements UserService {
     public int deleteUser(User user) {
         return userDao.deleteUser(user);
     }
+
+    @Override
+    @Transactional
+    public int incrementFailedAttempts(User user) {
+        user.setFailedAttempts(user.getFailedAttempts() + 1);
+
+        if(user.getFailedAttempts() >= 5)
+            return setUserLockout(user);
+        else
+            return userDao.incrementFailedAttempts(user);
+    }
+
+    @Override
+    @Transactional
+    public int setUserLockout(User user) {
+        return userDao.setLockout(user);
+    }
+
+    @Override
+    @Transactional
+    public int clearUserLockout(User user) {
+        return userDao.clearLockout(user);
+    }
 }

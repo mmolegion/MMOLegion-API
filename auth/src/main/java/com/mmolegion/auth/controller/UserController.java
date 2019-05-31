@@ -30,7 +30,6 @@ public class UserController {
         this.userService = userService;
     }
 
-
     @PostMapping("/api/v1/user")
     public ResponseEntity<?> createUser(HttpServletRequest request) {
         logger.debug("Attempting to create a user.");
@@ -96,10 +95,7 @@ public class UserController {
                 if (user != null) {
                     logger.debug("User found. Assigning new values.");
 
-                    if(rUser.getUsername() != null) {
-                        logger.debug("Username can not be changed. Setting username back to null.");
-                        rUser.setUsername(null);
-                    }
+                    rUser.setUsername(null);
 
                     if(rUser.getPassword() != null) {
                         Map<String, String> hashed = Crypto.generateHashedPassword(rUser.getPassword());

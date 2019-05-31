@@ -28,12 +28,24 @@ public class User implements Serializable {
     @Column(name = "passwordHash")
     private String passwordHash;
 
-    public User(int id, String username, String email, String passwordSalt, String passwordHash) {
+    @Column(name = "isAdmin")
+    private boolean isAdmin;
+
+    @Column(name = "failedAttempts")
+    private int failedAttempts;
+
+    @Column(name = "lockoutUntil")
+    private long lockoutUntil;
+
+    public User(int id, String username, String email, String passwordSalt, String passwordHash, boolean isAdmin, int failedAttempts, long lockoutUntil) {
         this.id = id;
         this.username = username;
         this.email = email;
         this.passwordSalt = passwordSalt;
         this.passwordHash = passwordHash;
+        this.isAdmin = isAdmin;
+        this.failedAttempts = failedAttempts;
+        this.lockoutUntil = lockoutUntil;
     }
 
     public User() {}
@@ -86,14 +98,42 @@ public class User implements Serializable {
         this.passwordHash = password_hash;
     }
 
+    public boolean isAdmin() {
+        return isAdmin;
+    }
+
+    public void setAdmin(boolean admin) {
+        isAdmin = admin;
+    }
+
+    public int getFailedAttempts() {
+        return failedAttempts;
+    }
+
+    public void setFailedAttempts(int attempts) {
+        this.failedAttempts = attempts;
+    }
+
+    public long getLockoutUntil() {
+        return lockoutUntil;
+    }
+
+    public void setLockoutUntil(long lockout) {
+        this.lockoutUntil = lockout;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
                 ", passwordSalt='" + passwordSalt + '\'' +
                 ", passwordHash='" + passwordHash + '\'' +
+                ", isAdmin=" + isAdmin +
+                ", failedAttempts=" + failedAttempts +
+                ", lockoutUntil=" + lockoutUntil +
                 '}';
     }
 }

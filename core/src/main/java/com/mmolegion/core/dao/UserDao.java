@@ -15,4 +15,10 @@ public interface UserDao {
 
     int deleteUser(User user);
 
+    int incrementFailedAttempts(User user);
+
+    int setLockout(User user);
+
+    int clearLockout(User user);
+
 }
