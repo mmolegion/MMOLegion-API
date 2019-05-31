@@ -48,7 +48,7 @@ public class UserController {
             return Token.generateTokenAndReturnResponse(user, response);
         } catch (NullPointerException | InvalidKeySpecException | NoSuchAlgorithmException e) {
             e.printStackTrace();
-            logger.debug("There was a missing parameter. Returning Bad Request 400 status.");
+            logger.debug("There was a missing parameter or user already exists. Returning Bad Request 400 status.");
         }
 
         response.put("valid", "false");
