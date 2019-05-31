@@ -73,41 +73,22 @@ textarea {
   ========================================================================== */
 .nav-link {
     color: #cacaca;
+    margin-right: 1rem;
 }
 
 .nav-link:hover {
     color: #fafafa;
 }
 
-.nav-link.active {
+.nav-item.active {
     color:#ffffff;
 }
 
-/* ==========================================================================
- Footer
-  ========================================================================== */
-.footer-margin {
-    height: 100px;
+nav svg {
+    color: #cacaca;
+    width: 2rem;
+    height: 2rem;
 }
-
-footer {
-    height: 100px;
-    background-color: #1a1a1d;
-    border-top: 1px solid #0e0e10;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
