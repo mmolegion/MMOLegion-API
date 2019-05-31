@@ -7,48 +7,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d37af16-e58e-4f66-8b74-52ab5fe5cfc9" name="Default Changelist" comment="completed user and token controller.">
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/mmolegion/web/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jboss-web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/resources/css/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/resources/js/plugins.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/resources/js/vendor/modernizr-3.7.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/resources/site.webmanifest" afterDir="false" />
+    <list default="true" id="1d37af16-e58e-4f66-8b74-52ab5fe5cfc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/TokenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/TokenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/mmolegion/auth/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/auth/WEB-INF/classes/com/mmolegion/auth/controller/TokenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth/target/auth/WEB-INF/classes/com/mmolegion/auth/controller/TokenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/auth/WEB-INF/classes/com/mmolegion/auth/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth/target/auth/WEB-INF/classes/com/mmolegion/auth/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/auth/WEB-INF/lib/core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/auth/target/auth/WEB-INF/lib/core-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/mmolegion/auth/controller/TokenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth/target/classes/com/mmolegion/auth/controller/TokenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/target/classes/com/mmolegion/auth/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth/target/classes/com/mmolegion/auth/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/dao/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Time.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/util/Token.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/dao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/dao/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/model/User_.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/model/User_.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/util/Time.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/util/Time.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/util/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/mmolegion/core/util/Token.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/generated-sources/annotations/com/mmolegion/core/model/User_.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/generated-sources/annotations/com/mmolegion/core/model/User_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/mmolegion/web/controller/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/test.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/resources/css/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/resources/js/vendor/bootstrap.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/js/jquery-3.4.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/resources/js/vendor/jquery-3.4.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/mmolegion/web/controller/TestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web.war" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/core-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/resources/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/resources/css/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,10 +25,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jboss-web.xml">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+            <state relative-caret-position="873">
+              <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -93,6 +54,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -139,9 +105,9 @@
         <option value="$PROJECT_DIR$/core/src/main/java/com/mmolegion/core/config/JPAConfig.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/resources/css/global.css" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/mmolegion/web/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jboss-web.xml" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home.jsp" />
       </list>
     </option>
   </component>
@@ -235,13 +201,6 @@
               <item name="Authentication" type="462c0819:PsiDirectoryNode" />
               <item name="auth" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Authentication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Authentication" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Authentication" type="b2602c69:ProjectViewProjectNode" />
@@ -468,7 +427,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559235210570" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559269664595" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -624,7 +583,7 @@
       <workItem from="1558806466962" duration="6004000" />
       <workItem from="1558830409897" duration="15533000" />
       <workItem from="1558892096561" duration="55758000" />
-      <workItem from="1559235282305" duration="102000" />
+      <workItem from="1559235282305" duration="4011000" />
     </task>
     <task id="LOCAL-00001" summary="completed user and token controller.">
       <created>1558987115214</created>
@@ -640,7 +599,21 @@
       <option name="project" value="LOCAL" />
       <updated>1558987208544</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added user lockout functionality. began work on web gui">
+      <created>1559235531256</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559235531256</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added user lockout functionality. began work on web gui">
+      <created>1559269661016</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559269661016</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -676,7 +649,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90461000" />
+    <option name="totallyTimeSpent" value="94370000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -691,7 +664,7 @@
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18680446" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18680446" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -733,7 +706,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="completed user and token controller." />
-    <option name="LAST_COMMIT_MESSAGE" value="completed user and token controller." />
+    <MESSAGE value="added user lockout functionality. began work on web gui" />
+    <option name="LAST_COMMIT_MESSAGE" value="added user lockout functionality. began work on web gui" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/resources/js/global.js">
@@ -1055,13 +1029,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1426">
-          <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/mmolegion/web/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -1093,8 +1060,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jboss-web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        <state relative-caret-position="46">
+          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="873">
+          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
         </state>
       </provider>
     </entry>
