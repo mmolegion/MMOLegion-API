@@ -44,6 +44,9 @@
                 <li class="list-inline-item">
                     <a class="nav-link" href="/">Support</a>
                 </li>
+                <li class="list-inline-item">
+                    <a class="nav-link" href="/">Hi Tina!</a>
+                </li>
             </ul>
         </nav>
 
