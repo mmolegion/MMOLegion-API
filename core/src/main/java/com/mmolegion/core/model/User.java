@@ -10,7 +10,12 @@ public class User implements Serializable {
     private static final long serialVersionUID = 8696470445722242385L;
 
     @Id
-    @Column(name = "id", insertable = false)
+    @SequenceGenerator(name="user_account_seq",
+            sequenceName = "user_account_seq",
+            allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,
+                    generator = "user_account_seq")
+    @Column(name = "id", updatable = false)
     private int id;
 
     @Column(name = "username")
