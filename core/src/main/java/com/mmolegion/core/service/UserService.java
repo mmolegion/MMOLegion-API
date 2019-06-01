@@ -9,6 +9,12 @@ public interface UserService {
 
     User findUser(String username) throws InvalidKeySpecException, NoSuchAlgorithmException;
 
+    User findEmail(String email);
+
+    boolean userExists(String username);
+
+    boolean emailExists(String username);
+
     User createUser(String username, String email, String password) throws  InvalidKeySpecException, NoSuchAlgorithmException;
 
     int updateUser(User user);

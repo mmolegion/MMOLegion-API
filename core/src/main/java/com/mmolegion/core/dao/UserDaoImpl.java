@@ -32,6 +32,17 @@ public class UserDaoImpl extends GenericDao implements UserDao {
     }
 
     @Override
+    public List<User> findEmail(String email) {
+        logger.debug("Attempting to find valid user for email: " + email);
+
+        Map<String, Object> params = new HashMap<>();
+        params.put("email", email);
+
+        String query = "select u from User u where u.email = :email";
+        return executeQuery(entityManager, query, params, User.class);
+    }
+
+    @Override
     public void createUser(String username, String email, Map<String, String> hashedPassword) {
         logger.debug("Attempting to create user for username: " + username);
 
