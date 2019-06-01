@@ -127,7 +127,7 @@
         <dependency>
             <groupId>javax.activation</groupId>
             <artifactId>activation</artifactId>
-        </dependency>1
+        </dependency>
 
         <!-- Testing -->
         <dependency>
@@ -139,7 +139,6 @@
             <artifactId>mockito-core</artifactId>
         </dependency>
     </dependencies>
-
 
     <build>
         <resources>
