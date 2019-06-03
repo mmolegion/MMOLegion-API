@@ -1,1 +1,2 @@
-com\mmolegion\web\controller\TestController.class
+com\mmolegion\web\controller\HomeController.class
+com\mmolegion\web\controller\ResetPasswordController.class

@@ -20,7 +20,6 @@ public class Crypto {
         byte[] salt = new byte[32];
         random.nextBytes(salt);
         String base64Salt = Base64.encodeBase64String(salt);
-        System.out.println(base64Salt);
 
         KeySpec spec = new PBEKeySpec(password.toCharArray(), salt, 65536, 256);
         SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");

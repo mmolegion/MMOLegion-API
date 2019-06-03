@@ -9,6 +9,8 @@ public interface UserDao {
 
     List<User> findUser(String username);
 
+    List<User> findEmail(String email);
+
     void createUser(String username, String email, Map<String, String> generateHashedPassword);
 
     int updateUser(User user);

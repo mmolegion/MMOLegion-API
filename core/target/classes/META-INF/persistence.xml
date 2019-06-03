@@ -8,6 +8,7 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>java:jboss/jdbc/mmolegion</jta-data-source>
         <class>com.mmolegion.core.model.User</class>
+        <class>com.mmolegion.core.model.PasswordReset</class>
     </persistence-unit>
 
 </persistence>
