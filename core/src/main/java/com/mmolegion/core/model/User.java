@@ -2,21 +2,22 @@ package com.mmolegion.core.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 
 @Entity
-@Table(name = "user_account")
+@Table(name = "lgn_user")
 public class User implements Serializable {
 
     private static final long serialVersionUID = 8696470445722242385L;
 
     @Id
-    @SequenceGenerator(name="user_account_seq",
-            sequenceName = "user_account_seq",
+    @SequenceGenerator(name="lgn_user_userid_seq",
+            sequenceName = "lgn_user_userid_seq",
             allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE,
-                    generator = "user_account_seq")
-    @Column(name = "id", updatable = false)
-    private int id;
+                    generator = "lgn_user_userid_seq")
+    @Column(name = "userId", updatable = false)
+    private int userId;
 
     @Column(name = "username")
     private String username;
@@ -24,43 +25,68 @@ public class User implements Serializable {
     @Column(name = "email")
     private String email;
 
-    @Transient
-    private String password;
+    @Column(name = "createdDate")
+    private long createdDate = new Date().getTime();
 
-    @Column(name = "passwordSalt")
-    private String passwordSalt;
+    @Column(name = "modifiedDate")
+    private long modifiedDate = new Date().getTime();
 
-    @Column(name = "passwordHash")
-    private String passwordHash;
+    @Column(name = "isActive")
+    private boolean isActive = true;
 
-    @Column(name = "isAdmin")
-    private boolean isAdmin;
+    // For User.class
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "createdByUserId")
+    private User createdByUser;
 
-    @Column(name = "failedAttempts")
-    private int failedAttempts;
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "modifiedByUserId")
+    private User modifiedByUser;
 
-    @Column(name = "lockoutUntil")
-    private long lockoutUntil;
+    @OneToOne(mappedBy = "createdByUser", cascade = CascadeType.ALL)
+    private User userCreatedByUser;
 
-    public User(int id, String username, String email, String passwordSalt, String passwordHash, boolean isAdmin, int failedAttempts, long lockoutUntil) {
-        this.id = id;
+    @OneToOne(mappedBy = "modifiedByUser", cascade = CascadeType.ALL)
+    private User userModifiedByUser;
+
+    // For UserPrefix.class
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    private UserPrefix userPrefix;
+
+    @OneToOne(mappedBy = "createdByUser", cascade = CascadeType.ALL)
+    private User prefixUserCreatedByUser;
+
+    @OneToOne(mappedBy = "modifiedByUser", cascade = CascadeType.ALL)
+    private User prefixUserModifiedByUser;
+
+    // For Password.class
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    private Password password;
+
+    @OneToOne(mappedBy = "createdByUser", cascade = CascadeType.ALL)
+    private User passwordUserCreatedByUser;
+
+    @OneToOne(mappedBy = "modifiedByUser", cascade = CascadeType.ALL)
+    private User passwordUserModifiedByUser;
+
+
+    public User(String username, String email, long createdDate, long modifiedDate, boolean isActive) {
         this.username = username;
         this.email = email;
-        this.passwordSalt = passwordSalt;
-        this.passwordHash = passwordHash;
-        this.isAdmin = isAdmin;
-        this.failedAttempts = failedAttempts;
-        this.lockoutUntil = lockoutUntil;
+        this.createdDate = createdDate;
+        this.modifiedDate = modifiedDate;
+        this.isActive = isActive;
     }
 
-    public User() {}
-
-    public int getId() {
-        return id;
+    public User() {
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public String getUsername() {
@@ -79,66 +105,43 @@ public class User implements Serializable {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
+    public long getCreatedDate() {
+        return createdDate;
     }
 
-    public void setPassword(String password) {
+    public void setCreatedDate(long createdDate) {
+        this.createdDate = createdDate;
+    }
+
+    public long getModifiedDate() {
+        return modifiedDate;
+    }
+
+    public void setModifiedDate(long modifiedDate) {
+        this.modifiedDate = modifiedDate;
+    }
+
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
+    }
+
+    public void setCreatedByUser(User createdByUser) {
+        this.createdByUser = createdByUser;
+    }
+
+    public void setModifiedByUser(User modifiedByUser) {
+        this.modifiedByUser = modifiedByUser;
+    }
+
+    public void setUserPrefix(UserPrefix userPrefix) {
+        this.userPrefix = userPrefix;
+    }
+
+    public void setPassword(Password password) {
         this.password = password;
-    }
-
-    public String getPasswordSalt() {
-        return passwordSalt;
-    }
-
-    public void setPasswordSalt(String password_salt) {
-        this.passwordSalt = password_salt;
-    }
-
-    public String getPasswordHash() {
-        return passwordHash;
-    }
-
-    public void setPasswordHash(String password_hash) {
-        this.passwordHash = password_hash;
-    }
-
-    public boolean isAdmin() {
-        return isAdmin;
-    }
-
-    public void setAdmin(boolean admin) {
-        isAdmin = admin;
-    }
-
-    public int getFailedAttempts() {
-        return failedAttempts;
-    }
-
-    public void setFailedAttempts(int attempts) {
-        this.failedAttempts = attempts;
-    }
-
-    public long getLockoutUntil() {
-        return lockoutUntil;
-    }
-
-    public void setLockoutUntil(long lockout) {
-        this.lockoutUntil = lockout;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                ", passwordSalt='" + passwordSalt + '\'' +
-                ", passwordHash='" + passwordHash + '\'' +
-                ", isAdmin=" + isAdmin +
-                ", failedAttempts=" + failedAttempts +
-                ", lockoutUntil=" + lockoutUntil +
-                '}';
     }
 }

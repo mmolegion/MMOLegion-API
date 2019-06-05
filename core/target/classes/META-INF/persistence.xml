@@ -8,7 +8,21 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>java:jboss/jdbc/mmolegion</jta-data-source>
         <class>com.mmolegion.core.model.User</class>
-        <class>com.mmolegion.core.model.PasswordReset</class>
+        <class>com.mmolegion.core.model.UserPrefix</class>
+        <class>com.mmolegion.core.model.Password</class>
+        <class>com.mmolegion.core.model.LoginAttempt</class>
+        <class>com.mmolegion.core.model.Product</class>
+        <class>com.mmolegion.core.model.ProductCategory</class>
+        <class>com.mmolegion.core.model.ProductSubCategory</class>
+        <class>com.mmolegion.core.model.Purchase</class>
+        <class>com.mmolegion.core.model.ItemPurchase</class>
+        <class>com.mmolegion.core.model.PaymentMethod</class>
+
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+            <property name="hibernate.show_sql" value="true" />
+        </properties>
     </persistence-unit>
 
 </persistence>

@@ -2,29 +2,20 @@ package com.mmolegion.core.service;
 
 import com.mmolegion.core.model.User;
 
-import java.security.NoSuchAlgorithmException;
-import java.security.spec.InvalidKeySpecException;
+import java.util.List;
 
 public interface UserService {
 
-    User findUser(String username) throws InvalidKeySpecException, NoSuchAlgorithmException;
+    User createUser(User user);
 
-    User findEmail(String email);
+    List<User> findAllUsers();
 
-    boolean userExists(String username);
+    User getUserByUsername(User user);
 
-    boolean emailExists(String username);
+    User getUserByEmail(User user);
 
-    User createUser(String username, String email, String password) throws  InvalidKeySpecException, NoSuchAlgorithmException;
+    User updateUser(User user);
 
-    int updateUser(User user);
-
-    int deleteUser(User user);
-
-    int incrementFailedAttempts(User user);
-
-    int setUserLockout(User user);
-
-    int clearUserLockout(User user);
+    void deleteUser(User user);
 
 }

@@ -1,2 +1,6 @@
+com\mmolegion\auth\controller\PasswordController.class
+com\mmolegion\auth\controller\PurchaseController.class
+com\mmolegion\auth\controller\LoginController.class
 com\mmolegion\auth\controller\UserController.class
-com\mmolegion\auth\controller\TokenController.class
+com\mmolegion\auth\controller\PaymentMethodController.class
+com\mmolegion\auth\controller\ProductController.class

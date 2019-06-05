@@ -1,26 +1,23 @@
 package com.mmolegion.core.dao;
 
 import com.mmolegion.core.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
-import java.util.Map;
 
-public interface UserDao {
+@Repository
+public interface UserDao extends JpaRepository<User, Integer> {
 
-    List<User> findUser(String username);
+    @Query("select u, up from User u left join u.userPrefix up")
+    List<User> findAll();
 
-    List<User> findEmail(String email);
+    User getUserByUsername(User user);
 
-    void createUser(String username, String email, Map<String, String> generateHashedPassword);
+    User getUserByEmail(User user);
 
-    int updateUser(User user);
+    <T extends User> T save(T user);
 
-    int deleteUser(User user);
-
-    int incrementFailedAttempts(User user);
-
-    int setLockout(User user);
-
-    int clearLockout(User user);
-
+    void delete(User user);
 }

@@ -19,12 +19,12 @@ import javax.sql.DataSource;
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = {
         "com.mmolegion.core.dao",
-        "com.mmolegion.core.service"
+        "com.mmolegion.core.service",
 })
 @ComponentScans(value = {
         @ComponentScan("com.mmolegion.core.dao"),
         @ComponentScan("com.mmolegion.core.service"),
-        @ComponentScan("com.mmolegion.core.model")
+        @ComponentScan("com.mmolegion.core.model"),
 })
 public class JPAConfig {
     
