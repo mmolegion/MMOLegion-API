@@ -43,20 +43,6 @@ public class PurchaseController {
         return null;
     }
 
-    @GetMapping("/api/v1/purchases{query}")
-    public ResponseEntity<?> findAllPurchasesWithQuery(HttpServletRequest request, @PathVariable String query) {
-
-
-        return null;
-    }
-
-    @PutMapping("/api/v1/purchases{query}")
-    public ResponseEntity<?> updateAllPurchasesWithQuery(HttpServletRequest request, @PathVariable String query, @RequestBody Purchase requestBody) {
-
-
-        return null;
-    }
-
     @GetMapping("/api/v1/purchases/{purchaseId}")
     public ResponseEntity<?> findPurchaseById(HttpServletRequest request, @PathVariable int purchaseId) {
 
@@ -85,17 +71,4 @@ public class PurchaseController {
         return null;
     }
 
-    @GetMapping("/api/v1/purchases/{purchaseId}/item{query}")
-    public ResponseEntity<?> findAllItemsFromPurchaseWithQuery(HttpServletRequest request, @PathVariable int purchaseId, @PathVariable String query) {
-
-
-        return null;
-    }
-
-    @PutMapping("/api/v1/purchases/{purchaseId}/item{query}")
-    public ResponseEntity<?> updateAllItemsForPurchaseWithQuery(HttpServletRequest request, @PathVariable int purchaseId, @PathVariable String query, @RequestBody ItemPurchase requestBody) {
-
-
-        return null;
-    }
 }

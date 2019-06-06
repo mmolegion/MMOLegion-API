@@ -50,27 +50,6 @@ public class PaymentMethodController {
         return null;
     }
 
-    @GetMapping("/api/v1/payment{query}")
-    public ResponseEntity<?> findAllPaymentMethodsWithQuery(HttpServletRequest request, @PathVariable String query) {
-
-
-        return null;
-    }
-
-    @PutMapping("/api/v1/payment{query}")
-    public ResponseEntity<?> updateAllPaymentMethodsWithQuery(HttpServletRequest request, @PathVariable String query, @RequestBody PaymentMethod requestBody) {
-
-
-        return null;
-    }
-
-    @DeleteMapping("/api/v1/payment{query}")
-    public ResponseEntity<?> deleteAllPaymentMethodsWithQuery(HttpServletRequest request, @PathVariable String query) {
-
-
-        return null;
-    }
-
     @GetMapping("/api/v1/payment/{paymentId}")
     public ResponseEntity<?> findPaymentMethodById(HttpServletRequest request, @PathVariable int paymentId) {
 
@@ -106,17 +85,4 @@ public class PaymentMethodController {
         return null;
     }
 
-    @GetMapping("/api/v1/payment/{paymentId}/purchases{query}")
-    public ResponseEntity<?> findAllPurchasesMadeUsingPaymentMethodWithQuery(HttpServletRequest request, @PathVariable int paymentId, @PathVariable String query) {
-
-
-        return null;
-    }
-
-    @PutMapping("/api/v1/payment/{paymentId}/purchases{query}")
-    public ResponseEntity<?> updateAllPurchasesMadeUsingPaymentMethodWithQuery(HttpServletRequest request, @PathVariable int paymentId, @PathVariable String query, @RequestBody Purchase requestBody) {
-
-
-        return null;
-    }
 }

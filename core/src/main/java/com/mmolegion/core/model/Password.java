@@ -19,12 +19,6 @@ public class Password implements Serializable {
     @Column(name = "passwordId", updatable = false)
     private int passwordId;
 
-    @Column(name = "passwordQuestion")
-    private String passwordQuestion;
-
-    @Column(name = "passwordAnswer")
-    private String passwordAnswer;
-
     @Transient
     private String password;
 
@@ -55,10 +49,7 @@ public class Password implements Serializable {
     @JoinColumn(name = "modifiedByUserId")
     private User passwordUserModifiedByUser;
 
-    public Password(String passwordQuestion, String passwordAnswer, String password, String passwordSalt, String passwordHash, long createdDate, long modifiedDate, boolean isActive) {
-        this.passwordQuestion = passwordQuestion;
-        this.passwordAnswer = passwordAnswer;
-        this.password = password;
+    public Password(String passwordSalt, String passwordHash, long createdDate, long modifiedDate, boolean isActive) {
         this.passwordSalt = passwordSalt;
         this.passwordHash = passwordHash;
         this.createdDate = createdDate;
@@ -75,22 +66,6 @@ public class Password implements Serializable {
 
     public void setPasswordId(int passwordId) {
         this.passwordId = passwordId;
-    }
-
-    public String getPasswordQuestion() {
-        return passwordQuestion;
-    }
-
-    public void setPasswordQuestion(String passwordQuestion) {
-        this.passwordQuestion = passwordQuestion;
-    }
-
-    public String getPasswordAnswer() {
-        return passwordAnswer;
-    }
-
-    public void setPasswordAnswer(String passwordAnswer) {
-        this.passwordAnswer = passwordAnswer;
     }
 
     public String getPassword() {

@@ -37,13 +37,6 @@ public class LoginController {
         return null;
     }
 
-    @GetMapping("/api/v1/auth/login{query}")
-    public ResponseEntity<?> findAllLoginAttemptsWithQuery(HttpServletRequest request, @PathVariable String query) {
-
-
-        return null;
-    }
-
     @PostMapping("/api/v1/auth/verify")
     public ResponseEntity<?> verifyToken(HttpServletRequest request) {
 

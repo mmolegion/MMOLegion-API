@@ -1,7 +1,7 @@
 package com.mmolegion.api.controller;
 
-import com.mmolegion.core.util.Token;
 import com.mmolegion.core.util.RSA;
+import com.mmolegion.core.util.Token;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.http.HttpStatus;
@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import java.security.KeyPair;
 import java.security.NoSuchAlgorithmException;
-import java.security.spec.InvalidKeySpecException;
 import java.util.HashMap;
 import java.util.Map;
 

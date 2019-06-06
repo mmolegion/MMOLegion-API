@@ -8,7 +8,6 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>java:jboss/jdbc/mmolegion</jta-data-source>
         <class>com.mmolegion.core.model.User</class>
-        <class>com.mmolegion.core.model.UserPrefix</class>
         <class>com.mmolegion.core.model.Password</class>
         <class>com.mmolegion.core.model.LoginAttempt</class>
         <class>com.mmolegion.core.model.Product</class>

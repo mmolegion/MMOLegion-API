@@ -51,27 +51,6 @@ public class ProductController {
         return null;
     }
 
-    @GetMapping("/api/v1/products{query}")
-    public ResponseEntity<?> findAllProductsWithQuery(HttpServletRequest request, @PathVariable String query) {
-
-
-        return null;
-    }
-
-    @PutMapping("/api/v1/products{query}")
-    public ResponseEntity<?> updateAllProductsWithQuery(HttpServletRequest request, @PathVariable String query, @RequestBody Product requestBody) {
-
-
-        return null;
-    }
-
-    @DeleteMapping("/api/v1/products{query}")
-    public ResponseEntity<?> deleteAllProductsWithQuery(HttpServletRequest request, @PathVariable String query) {
-
-
-        return null;
-    }
-
     @GetMapping("/api/v1/products/{productId}")
     public ResponseEntity<?> findProductById(HttpServletRequest request, @PathVariable int productId) {
 
@@ -121,28 +100,6 @@ public class ProductController {
         return null;
     }
 
-
-    @GetMapping("/api/v1/products/categories{query}")
-    public ResponseEntity<?> findAllCategoriesWithQuery(HttpServletRequest request, @PathVariable String query) {
-
-
-        return null;
-    }
-
-    @PutMapping("/api/v1/products/categories{query}")
-    public ResponseEntity<?> updateAllCategoriesWithQuery(HttpServletRequest request, @PathVariable String query, @RequestBody ProductCategory requestBody) {
-
-
-        return null;
-    }
-
-    @DeleteMapping("/api/v1/products/categories{query}")
-    public ResponseEntity<?> deleteAllCategoriesWithQuery(HttpServletRequest request, @PathVariable String query) {
-
-
-        return null;
-    }
-
     @GetMapping("/api/v1/products/categories/{categoryId}")
     public ResponseEntity<?> findCategoryById(HttpServletRequest request, @PathVariable int categoryId) {
 
@@ -185,27 +142,6 @@ public class ProductController {
         return null;
     }
 
-    @GetMapping("/api/v1/products/categories/subcategories{query}")
-    public ResponseEntity<?> findAllSubcategoriesWithQuery(HttpServletRequest request, @PathVariable String query) {
-
-
-        return null;
-    }
-
-    @PutMapping("/api/v1/products/categories/subcategories{query}")
-    public ResponseEntity<?> updateAllSubcategoriesWithQuery(HttpServletRequest request, @PathVariable String query, @RequestBody ProductSubCategory requestBody) {
-
-
-        return null;
-    }
-
-    @DeleteMapping("/api/v1/products/categories/subcategories{query}")
-    public ResponseEntity<?> deleteAllSubcategoriesWithQuery(HttpServletRequest request, @PathVariable String query) {
-
-
-        return null;
-    }
-
     @GetMapping("/api/v1/products/categories/{categoryId}/subcategory")
     public ResponseEntity<?> findAllSubCategoriesForId(HttpServletRequest request, @PathVariable int categoryId) {
 
@@ -234,24 +170,4 @@ public class ProductController {
         return null;
     }
 
-    @GetMapping("/api/v1/products/categories/{categoryId}/subcategory{query}")
-    public ResponseEntity<?> findAllSubCategoriesForIdWithQuery(HttpServletRequest request, @PathVariable int categoryId, @PathVariable String query) {
-
-
-        return null;
-    }
-
-    @PutMapping("/api/v1/products/categories/{categoryId}/subcategory{query}")
-    public ResponseEntity<?> updateAllSubCategoriesForIdWithQuery(HttpServletRequest request, @PathVariable int categoryId, @PathVariable String query, @RequestBody ProductSubCategory requestBody) {
-
-
-        return null;
-    }
-
-    @DeleteMapping("/api/v1/products/categories/{categoryId}/subcategory{query}")
-    public ResponseEntity<?> deleteAllSubCategoriesForIdWithQuery(HttpServletRequest request, @PathVariable int categoryId, @PathVariable String query) {
-
-
-        return null;
-    }
 }

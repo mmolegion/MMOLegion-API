@@ -49,16 +49,6 @@ public class User implements Serializable {
     @OneToOne(mappedBy = "modifiedByUser", cascade = CascadeType.ALL)
     private User userModifiedByUser;
 
-    // For UserPrefix.class
-    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
-    private UserPrefix userPrefix;
-
-    @OneToOne(mappedBy = "createdByUser", cascade = CascadeType.ALL)
-    private User prefixUserCreatedByUser;
-
-    @OneToOne(mappedBy = "modifiedByUser", cascade = CascadeType.ALL)
-    private User prefixUserModifiedByUser;
-
     // For Password.class
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Password password;
@@ -135,10 +125,6 @@ public class User implements Serializable {
 
     public void setModifiedByUser(User modifiedByUser) {
         this.modifiedByUser = modifiedByUser;
-    }
-
-    public void setUserPrefix(UserPrefix userPrefix) {
-        this.userPrefix = userPrefix;
     }
 
     public void setPassword(Password password) {

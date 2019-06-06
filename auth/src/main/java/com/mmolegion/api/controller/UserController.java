@@ -49,19 +49,21 @@ public class UserController {
 
     @PostMapping("/api/v1/users")
     public ResponseEntity<?> createUser(HttpServletRequest request) {
+        logger.debug("Creating user.");
 
+        String random = UUID.randomUUID().toString().replaceAll("\\d", "").replace("-", "").substring(0,6);
         try {
             User user = new User();
-            user.setUsername(request.getParameter("username"));
-            user.setEmail(request.getParameter("email"));
+            user.setUsername(random);
+            user.setEmail(random);
+//            user.setUsername(request.getParameter("username"));
+//            user.setEmail(request.getParameter("email"));
             user.setCreatedByUser(user);
             user.setModifiedByUser(user);
 
             Password password = new Password();
             password.setUser(user);
             password.setPassword(request.getParameter("password"));
-            password.setPasswordQuestion(request.getParameter("passwordQuestion"));
-            password.setPasswordAnswer(request.getParameter("passwordAnswer"));
             password.setPasswordUserCreatedByUser(user);
             password.setPasswordUserModifiedByUser(user);
 
@@ -69,33 +71,11 @@ public class UserController {
             password.setPasswordSalt(hashed.get("salt"));
             password.setPasswordHash(hashed.get("hash"));
 
-            UserPrefix userPrefix = new UserPrefix();
-            userPrefix.setPrefix(UUID.randomUUID().toString().substring(0, 12));
-            userPrefix.setUser(user);
-            userPrefix.setPrefixUserCreatedByUser(user);
-            userPrefix.setPrefixUserModifiedByUser(user);
-
             user.setPassword(password);
-            user.setUserPrefix(userPrefix);
             user = userService.createUser(user);
 
             if (user.getUserId() > 0) {
-                String token = Token.create(
-                        JWT.create()
-                                .withIssuer(AppProperties.getProperty("jwt.issuer"))
-                                .withExpiresAt(Time.addDays(7))
-                                .withIssuedAt(new Date())
-                                .withSubject(String.valueOf(user.getUserId()))
-                                .withClaim("prefix", userPrefix.getPrefix())
-                                .withClaim("notes", userPrefix.getNotes())
-                                .withClaim("username", user.getUsername())
-                                .withClaim("email", user.getEmail())
-                                .withClaim("createdDate", user.getCreatedDate())
-                                .withClaim("modifiedDate", user.getModifiedDate())
-                                .withClaim("active", user.isActive())
-                );
-
-                return new ResponseEntity<>(token, HttpStatus.OK);
+                return createUserToken(user);
             }
         } catch (InvalidKeySpecException | NoSuchAlgorithmException | NullPointerException e) {
             e.printStackTrace();
@@ -106,114 +86,65 @@ public class UserController {
 
     @PutMapping("/api/v1/users")
     public ResponseEntity<?> updateAllUsers(HttpServletRequest request, @RequestBody User requestBody) {
-
-
+        // would I use this for anything?
         return null;
     }
 
     @DeleteMapping("/api/v1/users")
     public ResponseEntity<?> deleteAllUsers(HttpServletRequest request) {
+        logger.debug("Deleting all users.");
+        userService.deleteAllUsers();
 
-
-        return null;
-    }
-
-    @GetMapping("/api/v1/users{query}")
-    public ResponseEntity<?> findAllUsersWithQuery(HttpServletRequest request, @PathVariable String query) {
-
-
-        return null;
-    }
-
-    @PutMapping("/api/v1/users{query}")
-    public ResponseEntity<?> updateAllUsersWithQuery(HttpServletRequest request, @PathVariable String query, @RequestBody User requestBody) {
-
-
-        return null;
-    }
-
-    @DeleteMapping("/api/v1/users{query}")
-    public ResponseEntity<?> deleteAllUsersWithQuery(HttpServletRequest request, @PathVariable String query) {
-
-
-        return null;
+        if(userService.findAllUsers().size() == 0)
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        else return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
     @GetMapping("/api/v1/users/{userId}")
-    public ResponseEntity<?> findUserById(HttpServletRequest request, @PathVariable String userId) {
+    public ResponseEntity<?> findUserById(HttpServletRequest request, @PathVariable int userId) {
+        User user = userService.findUser(userId);
 
+        if(user != null) {
+            try {
+                return createUserToken(user);
+            } catch (InvalidKeySpecException | NoSuchAlgorithmException e) {
+                e.printStackTrace();
+            }
+        }
 
-        return null;
+        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
     }
 
     @PutMapping("/api/v1/users/{userId}")
     public ResponseEntity<?> updateUserById(HttpServletRequest request, @PathVariable String userId, @RequestBody User requestBody) {
-
-
+        // what would i update?
         return null;
     }
 
     @DeleteMapping("/api/v1/users/{userId}")
-    public ResponseEntity<?> deleteUserById(HttpServletRequest request, @PathVariable String userId) {
+    public ResponseEntity<?> deleteUserById(HttpServletRequest request, @PathVariable int userId) {
+        userService.deleteUser(userId);
 
-
-        return null;
+        if(userService.findUser(userId) == null)
+            return new ResponseEntity<>(HttpStatus.ACCEPTED);
+        else return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
-    @GetMapping("/api/v1/users/{userId}/purchases")
-    public ResponseEntity<?> findAllPurchasesByUser(HttpServletRequest request, @PathVariable String userId) {
+    private ResponseEntity<?> createUserToken(User user) throws InvalidKeySpecException, NoSuchAlgorithmException {
+        String token = Token.create(
+                JWT.create()
+                        .withIssuer(AppProperties.getProperty("jwt.issuer"))
+                        .withExpiresAt(Time.addDays(7))
+                        .withIssuedAt(new Date())
+                        .withSubject(String.valueOf(user.getUserId()))
+                        .withClaim("username", user.getUsername())
+                        .withClaim("email", user.getEmail())
+                        .withClaim("createdDate", user.getCreatedDate())
+                        .withClaim("modifiedDate", user.getModifiedDate())
+                        .withClaim("active", user.isActive())
+        );
 
-
-        return null;
-    }
-
-    @PutMapping("/api/v1/users/{userId}/purchases")
-    public ResponseEntity<?> updateAllPurchasesByUser(HttpServletRequest request, @PathVariable String userId, @RequestBody Purchase requestBody) {
-
-
-        return null;
-    }
-
-    @GetMapping("/api/v1/users/{userId}/purchases{query}")
-    public ResponseEntity<?> findAllPurchasesByUserWithQuery(HttpServletRequest request, @PathVariable String userId, @PathVariable String query) {
-
-
-        return null;
-    }
-
-    @PutMapping("/api/v1/users/{userId}/purchases{query}")
-    public ResponseEntity<?> updateAllPurchasesByUserWithQuery(HttpServletRequest request, @PathVariable String userId, @PathVariable String query, @RequestBody Purchase requestBody) {
-
-
-        return null;
-    }
-
-    @GetMapping("/api/v1/users/{userId}/purchases/items")
-    public ResponseEntity<?> findAllItemsPurchasedByUser(HttpServletRequest request, @PathVariable String userId) {
-
-
-        return null;
-    }
-
-    @PutMapping("/api/v1/users/{userId}/purchases/items")
-    public ResponseEntity<?> updateAllItemsPurchasedByUser(HttpServletRequest request, @PathVariable String userId, @RequestBody ItemPurchase requestBody) {
-
-
-        return null;
-    }
-
-    @GetMapping("/api/v1/users/{userId}/purchases/items{query}")
-    public ResponseEntity<?> findAllItemsPurchasedByUserWithQuery(HttpServletRequest request, @PathVariable String userId, @PathVariable String query) {
-
-
-        return null;
-    }
-
-    @PutMapping("/api/v1/users/{userId}/purchases/items{query}")
-    public ResponseEntity<?> updateAllItemsPurchasedByUserWithQuery(HttpServletRequest request, @PathVariable String userId, @PathVariable String query, @RequestBody ItemPurchase requestBody) {
-
-
-        return null;
+        return new ResponseEntity<>(token, HttpStatus.OK);
     }
 
 }

@@ -10,12 +10,14 @@ public interface UserService {
 
     List<User> findAllUsers();
 
-    User getUserByUsername(User user);
+    User findUser(int userId);
 
-    User getUserByEmail(User user);
+    List<User> updateAllUsers(User user);
 
     User updateUser(User user);
 
-    void deleteUser(User user);
+    void deleteAllUsers();
+
+    void deleteUser(int userId);
 
 }
